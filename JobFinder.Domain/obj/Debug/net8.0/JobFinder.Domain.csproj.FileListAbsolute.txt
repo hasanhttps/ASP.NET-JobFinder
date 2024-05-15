@@ -1,0 +1,15 @@
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\bin\Debug\net8.0\JobFinder.Domain.deps.json
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\bin\Debug\net8.0\JobFinder.Domain.runtimeconfig.json
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\bin\Debug\net8.0\JobFinder.Domain.dll
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\bin\Debug\net8.0\JobFinder.Domain.pdb
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.AssemblyInfoInputs.cache
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.AssemblyInfo.cs
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.sourcelink.json
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.dll
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\refint\JobFinder.Domain.dll
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.pdb
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.genruntimeconfig.cache
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\ref\JobFinder.Domain.dll
+C:\Users\hasan\Downloads\JobFinderPractic-20240515T145410Z-001\JobFinderPractic\JobFinder.Domain\obj\Debug\net8.0\JobFinder.Domain.csproj.AssemblyReference.cache

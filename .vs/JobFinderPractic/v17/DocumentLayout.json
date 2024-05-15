@@ -1,0 +1,236 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\registers\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\registers\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5B46709-C1D3-412A-BBA0-3305CB29AE0B}|JobFinder.Domain\\JobFinder.Domain.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinder.domain\\entities\\concretes\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5B46709-C1D3-412A-BBA0-3305CB29AE0B}|JobFinder.Domain\\JobFinder.Domain.csproj|solutionrelative:jobfinder.domain\\entities\\concretes\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinderpractic\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA797A2-906B-4D07-B0E8-FC6A86C42031}|JobFinderPractic\\JobFinderPractic.csproj|solutionrelative:jobfinderpractic\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.DataAccsess\\Migrations\\20240515171710_mig6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JobFinder.DataAccsess\\Migrations\\20240515171710_mig6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FEA2C6B-26DB-4F44-90ED-145BC6160B56}|JobFinder.DataAccsess\\JobFinder.DataAccsess.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinder.dataaccsess\\dbcontexts\\jobfinderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FEA2C6B-26DB-4F44-90ED-145BC6160B56}|JobFinder.DataAccsess\\JobFinder.DataAccsess.csproj|solutionrelative:jobfinder.dataaccsess\\dbcontexts\\jobfinderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FEA2C6B-26DB-4F44-90ED-145BC6160B56}|JobFinder.DataAccsess\\JobFinder.DataAccsess.csproj|c:\\users\\hasan\\downloads\\jobfinderpractic-20240515t145410z-001\\jobfinderpractic\\jobfinder.dataaccsess\\configurations\\jobsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FEA2C6B-26DB-4F44-90ED-145BC6160B56}|JobFinder.DataAccsess\\JobFinder.DataAccsess.csproj|solutionrelative:jobfinder.dataaccsess\\configurations\\jobsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "JobFinderPractic\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T17:26:40.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "JobFinderPractic\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:26:10.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "JobFinderPractic\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T17:22:51.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Program.cs",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Program.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Program.cs",
+              "RelativeToolTip": "JobFinderPractic\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:21:26.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Registers\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Registers\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Registers\\ServiceRegistration.cs",
+              "RelativeToolTip": "JobFinderPractic\\Registers\\ServiceRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:19:55.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240515171710_mig6.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.DataAccsess\\Migrations\\20240515171710_mig6.cs",
+              "RelativeDocumentMoniker": "JobFinder.DataAccsess\\Migrations\\20240515171710_mig6.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.DataAccsess\\Migrations\\20240515171710_mig6.cs",
+              "RelativeToolTip": "JobFinder.DataAccsess\\Migrations\\20240515171710_mig6.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:17:10.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.Domain\\Entities\\Concretes\\AppUser.cs",
+              "RelativeDocumentMoniker": "JobFinder.Domain\\Entities\\Concretes\\AppUser.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.Domain\\Entities\\Concretes\\AppUser.cs",
+              "RelativeToolTip": "JobFinder.Domain\\Entities\\Concretes\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:16:32.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "JobFinderPractic\\Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:16:21.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "JobFinderPractic\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowBIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:08:22.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "JobFinderPractic\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinderPractic\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "JobFinderPractic\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwDUAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:08:02.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JobFinderDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.DataAccsess\\DbContexts\\JobFinderDbContext.cs",
+              "RelativeDocumentMoniker": "JobFinder.DataAccsess\\DbContexts\\JobFinderDbContext.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.DataAccsess\\DbContexts\\JobFinderDbContext.cs",
+              "RelativeToolTip": "JobFinder.DataAccsess\\DbContexts\\JobFinderDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T15:47:00.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JobsConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.DataAccsess\\Configurations\\JobsConfiguration.cs",
+              "RelativeDocumentMoniker": "JobFinder.DataAccsess\\Configurations\\JobsConfiguration.cs",
+              "ToolTip": "C:\\Users\\hasan\\Downloads\\JobFinderPractic-20240515T145410Z-001\\JobFinderPractic\\JobFinder.DataAccsess\\Configurations\\JobsConfiguration.cs",
+              "RelativeToolTip": "JobFinder.DataAccsess\\Configurations\\JobsConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T15:46:04.93Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
