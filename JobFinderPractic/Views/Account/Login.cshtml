@@ -31,6 +31,7 @@
                 <p class="login-box-msg">Sign in to start your session</p>
 
                 <form method="post" asp-action="Login">
+                    <input type="hidden" value="@ViewBag.ReturnUrl" name="ReturnUrl" />
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Email" asp-for="Email">
                         <div class="input-group-append">
@@ -56,6 +57,8 @@
                                 </label>
                             </div>
                         </div>
+
+                        <div asp-validation-summary="All"></div>
                         <!-- /.col -->
                         <div class="col-4">
                             <button type="submit" class="btn btn-primary btn-block">Sign In</button>

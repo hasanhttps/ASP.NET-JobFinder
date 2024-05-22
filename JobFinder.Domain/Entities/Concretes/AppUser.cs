@@ -1,5 +1,4 @@
-﻿using JobFinder.Domain.Entities.Abstracts;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace JobFinder.Domain.Entities.Concretes;
 

@@ -1,7 +1,6 @@
-﻿using JobFinder.DataAccsess.DbContexts;
+﻿using Microsoft.EntityFrameworkCore;
+using JobFinder.DataAccsess.DbContexts;
 using JobFinder.Domain.Entities.Concretes;
-using JobFinder.DataAccess.Reposiotries.Abstracts;
-using Microsoft.EntityFrameworkCore;
 
 namespace JobFinder.DataAccess.Reposiotries.Concretes;
 
