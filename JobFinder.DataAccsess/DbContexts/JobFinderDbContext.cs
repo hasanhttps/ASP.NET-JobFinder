@@ -21,5 +21,6 @@ public class JobFinderDbContext : IdentityDbContext<AppUser> {
     // Tabels
 
     public virtual DbSet<Jobs> Jobs { get; set; }
+    public virtual DbSet<Categories> Categories { get; set; }
 
 }

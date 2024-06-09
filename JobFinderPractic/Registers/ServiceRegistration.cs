@@ -4,6 +4,8 @@ using JobFinder.DataAccsess.DbContexts;
 using JobFinder.Domain.Entities.Concretes;
 using JobFinder.DataAccess.Reposiotries.Abstracts;
 using JobFinder.DataAccess.Reposiotries.Concretes;
+using JobFinder.DataAccsess.Reposiotries.Abstracts;
+using JobFinder.DataAccsess.Reposiotries.Concretes;
 
 namespace JobFinderPractic.Registers;
 
@@ -16,6 +18,7 @@ public static class ServiceRegistration {
 
     public static void AddRepositoryServices(this IServiceCollection collection) {
         collection.AddScoped<IJobRepository, JobRepository>();
+        collection.AddScoped<ICategoryRepository, CategoryRepository>();
         collection.AddScoped<AppUserRepository>();
     }
 
@@ -41,12 +44,14 @@ public static class ServiceRegistration {
         if (adminUser is null) {
             var result = await usermanager.CreateAsync(new AppUser {
                 UserName = "Hasan",
+                Role = "Admin",
+                FullName = "Hasan Abdullazade",
                 Email = "hasanabdullazad@gmail.com",
                 EmailConfirmed = true,
             }, "aHsgd527gY-1");
 
             if (result.Succeeded) {
-                var user = await usermanager.FindByNameAsync("Cavid");
+                var user = await usermanager.FindByNameAsync("Hasan");
                 await usermanager.AddToRoleAsync(user, "Admin");
             }
         }

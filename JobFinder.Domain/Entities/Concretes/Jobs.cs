@@ -3,18 +3,34 @@
 namespace JobFinder.Domain.Entities.Concretes;
 public class Jobs : BaseEntity {
 
-    public string Title {  get; set; }
-    public string StateType { get; set; }
-    public string WorkingSchedule { get; set; }
-    public string StandartEntranceProccess { get; set; }
-    public string Category { get; set; }
-    public string Description { get; set; }
-    public string VacancyCode { get; set; }
-    public string VacancyUrl { get; set; }
-    public string ProfileRequierments { get; set; }
-    public DateTime ExpireDateTime { get; set; }
+    public int MinAge { get; set; }
+    public int MaxAge { get; set; }
+    public string Name { get; set; }
+    public string? Desc { get; set; }
+    public int MinSalary { get; set; }
+    public int MaxSalary { get; set; }
+    public string? Gender { get; set; }
+    public string? Region { get; set; }
+    public string? Location { get; set; }
+    public string? Schedule { get; set; }
+    public string? Education { get; set; }
+    public string? StateType { get; set; }
+    public string Experience { get; set; }
+    public int VacantionCode { get; set; }
+    public string VacantionUrl { get; set; }
+    public string? EntryProcess { get; set; }
+    public string ProfileDemand { get; set; }
+    public DateTime? ExpireDateTime { get; set; }
+    public bool AcceptNotCompleteCv { get; set; }
+    public bool AcceptAppealFromRetired { get; set; }
 
     // Foreign Key Ids
 
-    public int AppUserId { get; set; }
+    public string UserId { get; set; }
+    public int CategoryId { get; set; }
+
+    // Navigation Property
+
+    public virtual AppUser User { get; set; }
+    public virtual Categories Category { get; set; }
 }

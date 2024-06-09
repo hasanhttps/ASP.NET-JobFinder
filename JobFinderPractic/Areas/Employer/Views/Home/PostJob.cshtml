@@ -1,0 +1,534 @@
+﻿@using JobFinderPractic.Areas.Employer.Models
+@model PostJobVM
+
+<!-- Hero Area Start-->
+<div class="slider-area ">
+    <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/about.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-cap text-center">
+                        <h2>About us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero Area End -->
+<!-- Support Company Start-->
+<form asp-action="PostJob" asp-controller="Home" asp-area="Employer">
+    <div class="support-company-area fix section-padding2">
+        <div class="container mb-5">
+            <div class="forborders">
+                <div class="container">
+                    <div class="row">
+                        <h4 class="pb-2 pl-2">Vakansiyanın Detalları</h4>
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Başlıq" asp-for="Name" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="StateType">
+                                <option value='0'>Ştat Növü</option>
+                                <option value='Yogesh'>Yogesh</option>
+                                <option value='Sonarika'>Sonarika</option>
+                                <option value='Vishal'>Vishal</option>
+                                <option value='Vijay'>Vijay</option>
+                                <option value='Ravi'>Ravi</option>
+                                <option value='Anil'>Anil</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="Schedule">
+                                <option value='0'>İş Cədvəli</option>
+                                <option value='Yogesh'>Yogesh</option>
+                                <option value='Sonarika'>Sonarika</option>
+                                <option value='Vishal'>Vishal</option>
+                                <option value='Vijay'>Vijay</option>
+                                <option value='Ravi'>Ravi</option>
+                                <option value='Anil'>Anil</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="EntryProcess">
+                                <option value='0'>Standart Qəbul Prosesi</option>
+                                <option value='Yogesh'>Yogesh</option>
+                                <option value='Sonarika'>Sonarika</option>
+                                <option value='Vishal'>Vishal</option>
+                                <option value='Vijay'>Vijay</option>
+                                <option value='Ravi'>Ravi</option>
+                                <option value='Anil'>Anil</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="CategoryId">
+                                <option value='0'>Kateqoriyalar</option>
+                                @foreach(var category in Model.Categories){
+                                    <option value=@category.Id>@category.CategoryName</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-12 pb-2">
+                            <input type="text" name="more" class="summernote" asp-for="Desc">@Model.Desc</input>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12 pb-2">
+                            <div class="input-group mb-3">
+                                <input type="text" asp-for="VacantionCode" class="form-control" placeholder="Vakansiya Kodu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-xs-12 pb-2">
+                            <div class="input-group mb-3">
+                                <input type="text" asp-for="VacantionUrl" class="form-control" placeholder="Vakansiyanın URL linki" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="ProfileDemand">
+                                <option value='0'>Ərizəçinin Profil Tələbləri</option>
+                                <option value='Yogesh'>Yogesh</option>
+                                <option value='Sonarika'>Sonarika</option>
+                                <option value='Vishal'>Vishal</option>
+                                <option value='Vijay'>Vijay</option>
+                                <option value='Ravi'>Ravi</option>
+                                <option value='Anil'>Anil</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 pb-2">
+                            <div class="input-group mb-3">
+                                <input type="date" class="form-control" placeholder="Vakansiyanın URL linki" aria-label="Username" asp-for="ExpireDateTime" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container mb-5">
+            <div class="forborders">
+                <div class="container">
+                    <div class="row">
+                        <h4 class="pb-2 pl-2">Tələblər & Əmək Haqqı</h4>
+                        <div class="col-12">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="Experience">
+                                <option value='0'>Təcrübə</option>
+                                <option value='Yogesh'>Yogesh</option>
+                                <option value='Sonarika'>Sonarika</option>
+                                <option value='Vishal'>Vishal</option>
+                                <option value='Vijay'>Vijay</option>
+                                <option value='Ravi'>Ravi</option>
+                                <option value='Anil'>Anil</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="Gender">
+                                <option value='0'>Cinsiyyət</option>
+                                <option value='Qadın'>Qadın</option>
+                                <option value='Kişi'>Kişi</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 pb-2">
+
+                            <select id='seluser' asp-for="Education">
+                                <option value='0'>Təhsil</option>
+                                <option value='Yogesh'>Yogesh</option>
+                                <option value='Sonarika'>Sonarika</option>
+                                <option value='Vishal'>Vishal</option>
+                                <option value='Vijay'>Vijay</option>
+                                <option value='Ravi'>Ravi</option>
+                                <option value='Anil'>Anil</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12 pb-2">
+
+                            <input type="text" id="tag-input1">
+                        </div>
+                        <!-- <div class="col-12 pb-2">
+                            <textarea name="more" class="summernote">Hello Summernote</textarea>
+
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 col-xs-12 pb-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control den" aria-label="Amount (to the nearest dollar)" asp-for="MinSalary" placeholder="Minimum Əmək Haqqı">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">AZN</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-12 pb-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control den" aria-label="Amount (to the nearest dollar)" asp-for="MaxSalary" placeholder="Maksimum Əmək Haqqı">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">AZN</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-xs-12 pb-2">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Minimum Yaş" aria-label="Username" asp-for="MinAge" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-xs-12 pb-2">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Maksimum Yaş" aria-label="Username" asp-for="MaxAge" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-12 pb-3">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" asp-for="AcceptAppealFromRetired" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Əngəlli Namizədlərdən müraciət qəbul edilir
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" asp-for="AcceptNotCompleteCv" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Natamam CV ilə müraciət qəbul edilir
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="container mb-5">
+                        <div class="forborders">
+                            <div class="container">
+                                <div class="row">
+                                    <h4 class="pb-2 pl-2">İş Yeri</h4>
+                                    <div class="col-12">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-xs-12 pb-2 ">
+
+                                        <select id='seluser' asp-for="Region">
+                                            <option value='0'>Region</option>
+                                            <option value='Yogesh'>Yogesh</option>
+                                            <option value='Sonarika'>Sonarika</option>
+                                            <option value='Vishal'>Vishal</option>
+                                            <option value='Vijay'>Vijay</option>
+                                            <option value='Ravi'>Ravi</option>
+                                            <option value='Anil'>Anil</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-xs-12 pb-2">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Ünvan" asp-for="Location" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <script type='text/javascript'>
+                            $(document).ready(function () {
+
+                                $('#seluser').niceSelect();
+
+                            });
+                        </script>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="container mb-5">
+                        <div class="forborders">
+                            <div class="container">
+                                <div class="row">
+                                    <h4 class="pb-2 pl-2">
+                                        Əlaqə məlumatları
+                                    </h4>
+                                    <div class="col-lg-12 col-md-12 col-xs-12 pb-2">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Əlaqədar şəxs" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-xs-12 pb-2">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Elektron ünvan 1" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 add-mail pb-2 m-auto text-center">
+                                        <div style="color:#005CC8;" type="button" class="button add-mail-button font-weight-bold">
+                                            + YENİ ELEKTRON ÜNVAN
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-12 col-xs-12 pb-2">
+                                        <div class="input-group mb-3">
+                                            <input type="phone" class="form-control" placeholder="Telefon Nömrəsi" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6  col-md-12 col-xs-12 pb-2">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Məlumat" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 add-phone pb-2 m-auto text-center">
+                                        <div style="color:#005CC8;" type="button" class="button add-phone-button font-weight-bold">
+                                            + YENİ TELEFON NÖMRƏSİ
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <button asp-action="PostJob" type="submit" asp-controller="Home" asp-area="Employer" class="btn head-btn1 float-right">Register</button>
+
+        </div>
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Support Company End-->
+<!-- How  Apply Process Start-->
+<div class="apply-process-area apply-bg pt-150 pb-150" data-background="assets/img/gallery/how-applybg.png">
+    <div class="container">
+        <!-- Section Tittle -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-tittle white-text text-center">
+                    <span>Apply process</span>
+                    <h2> How it works</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Apply Process Caption -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-process text-center mb-30">
+                    <div class="process-ion">
+                        <span class="flaticon-search"></span>
+                    </div>
+                    <div class="process-cap">
+                        <h5>1. Search a job</h5>
+                        <p>
+                            Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-process text-center mb-30">
+                    <div class="process-ion">
+                        <span class="flaticon-curriculum-vitae"></span>
+                    </div>
+                    <div class="process-cap">
+                        <h5>2. Apply for job</h5>
+                        <p>
+                            Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-process text-center mb-30">
+                    <div class="process-ion">
+                        <span class="flaticon-tour"></span>
+                    </div>
+                    <div class="process-cap">
+                        <h5>3. Get your job</h5>
+                        <p>
+                            Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- How  Apply Process End-->
+<!-- Testimonial Start -->
+<div class="testimonial-area testimonial-padding">
+    <div class="container">
+        <!-- Testimonial contents -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-8 col-lg-8 col-md-10">
+                <div class="h1-testimonial-active dot-style">
+                    <!-- Single Testimonial -->
+                    <div class="single-testimonial text-center">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-caption ">
+                            <!-- founder -->
+                            <div class="testimonial-founder  ">
+                                <div class="founder-img mb-30">
+                                    <img src="assets/img/testmonial/testimonial-founder.png" alt="">
+                                    <span>Margaret Lawson</span>
+                                    <p>Creative Director</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-top-cap">
+                                <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Testimonial -->
+                    <div class="single-testimonial text-center">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-caption ">
+                            <!-- founder -->
+                            <div class="testimonial-founder  ">
+                                <div class="founder-img mb-30">
+                                    <img src="assets/img/testmonial/testimonial-founder.png" alt="">
+                                    <span>Margaret Lawson</span>
+                                    <p>Creative Director</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-top-cap">
+                                <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Testimonial -->
+                    <div class="single-testimonial text-center">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-caption ">
+                            <!-- founder -->
+                            <div class="testimonial-founder  ">
+                                <div class="founder-img mb-30">
+                                    <img src="assets/img/testmonial/testimonial-founder.png" alt="">
+                                    <span>Margaret Lawson</span>
+                                    <p>Creative Director</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-top-cap">
+                                <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+<!-- Online CV Area Start -->
+<div class="online-cv cv-bg section-overly pt-90 pb-120" data-background="assets/img/gallery/cv_bg.jpg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="cv-caption text-center">
+                    <p class="pera1">FEATURED TOURS Packages</p>
+                    <p class="pera2"> Make a Difference with Your Online Resume!</p>
+                    <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Online CV Area End-->
+<!-- Blog Area Start -->
+<div class="home-blog-area blog-h-padding">
+    <div class="container">
+        <!-- Section Tittle -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-tittle text-center">
+                    <span>Our latest blog</span>
+                    <h2>Our recent news</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="home-blog-single mb-30">
+                    <div class="blog-img-cap">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/home-blog1.jpg" alt="">
+                            <!-- Blog date -->
+                            <div class="blog-date text-center">
+                                <span>24</span>
+                                <p>Now</p>
+                            </div>
+                        </div>
+                        <div class="blog-cap">
+                            <p>| Properties</p>
+                            <h3>
+                                <a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a>
+                            </h3>
+                            <a href="#" class="more-btn">Read more »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="home-blog-single mb-30">
+                    <div class="blog-img-cap">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/home-blog2.jpg" alt="">
+                            <!-- Blog date -->
+                            <div class="blog-date text-center">
+                                <span>24</span>
+                                <p>Now</p>
+                            </div>
+                        </div>
+                        <div class="blog-cap">
+                            <p>| Properties</p>
+                            <h3>
+                                <a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a>
+                            </h3>
+                            <a href="#" class="more-btn">Read more »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

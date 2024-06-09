@@ -54,6 +54,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Areas/Employee/Views/Home/FindJobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcSG9tZVxGaW5kSm9icy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Areas/Employee/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Areas/Employee/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Areas/Employer/Views/Home/PostJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZXJcVmlld3NcSG9tZVxQb3N0Sm9iLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Areas/Employer/Views/Vacancy/AddJob.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZXJcVmlld3NcVmFjYW5jeVxBZGRKb2IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,16 +106,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Views/Home/FindJobs.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaW5kSm9icy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Views/Home/PostJob.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0Sm9iLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hasan/Downloads/JobFinderPractic-20240515T145410Z-001/JobFinderPractic/JobFinderPractic/Views/Shared/_ValidationScriptsPartial.cshtml]

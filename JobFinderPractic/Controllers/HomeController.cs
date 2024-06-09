@@ -1,9 +1,7 @@
-using JobFinderPractic.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using JobFinder.Domain.Entities.Concretes;
-using Microsoft.AspNetCore.Authorization;
-using System.ComponentModel.Design.Serialization;
+using JobFinder.DataAccess.Reposiotries.Abstracts;
 
 namespace JobFinderPractic.Controllers;
 
@@ -11,24 +9,25 @@ public class HomeController : Controller {
 
     // Fields
 
-    private readonly ILogger<HomeController> _logger;
     private readonly UserManager<AppUser> _userManager;
-    private readonly SignInManager<AppUser> _signInManager;
+    private readonly IJobRepository _jobRepository;
 
     // Constructor
 
-    public HomeController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ILogger<HomeController> logger) {
+    public HomeController(IJobRepository jobRepository, UserManager<AppUser> userManager) {
         _userManager = userManager;
-        _signInManager = signInManager;
-        _logger = logger;
+        _jobRepository = jobRepository;
     }
 
     // Methods
 
     // Index => JobFinder-in Home Sehifesidir.
     [HttpGet]
-    public IActionResult Index() {
-        return View();
+    public async Task<IActionResult> Index() {
+
+        var jobs = await _jobRepository.GetAllAsync();
+
+        return View(jobs);
     }
 
     // About
@@ -41,24 +40,5 @@ public class HomeController : Controller {
     [HttpGet]
     public IActionResult Contact() {
         return View();
-    }
-
-    // Find a Jobs
-    [HttpGet]
-    [Authorize]
-    public IActionResult FindJobs() {
-        return View();
-    }
-
-    // Post a Job
-    [HttpGet]
-    [Authorize]
-    public IActionResult PostJob() {
-        return View();
-    }
-
-    [HttpPost]
-    public IActionResult PostJob(PostJobViewModel viewModel) { 
-        return View(viewModel);
     }
 }

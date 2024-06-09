@@ -57,25 +57,23 @@
                                 <div class="main-menu">
                                     <nav class="d-none d-lg-block">
                                         <ul id="navigation">
-                                            <li><a href="/Home/Index">Home</a></li>
-                                            <li><a href="/Home/FindJobs">Find a Jobs</a></li>
-                                            <li><a href="/Home/PostJob">Post a Job</a></li>
-                                            <li><a href="/Home/About">About</a></li>
-                                            <li><a href="/Home/Contact">Contact</a></li>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a asp-controller="Home" asp-area="Employee" asp-action="FindJobs">Find a Jobs</a></li>
+                                            <li><a asp-controller="Home" asp-area="Employer" asp-action="PostJob">Post a Job</a></li>
+                                            <li><a asp-controller="Home" asp-area="" asp-action="About">About</a></li>
+                                            <li><a asp-controller="Home" asp-area="" asp-action="Contact">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
                                     
-                                    @if(!User.Identity!.IsAuthenticated)
-                                    {
-                                        <a asp-action="Register" asp-controller="Account" class="btn head-btn1">Register</a>
-                                        <a asp-action="Login" asp-controller="Account" class="btn head-btn2">Login</a>
+                                    @if(!User.Identity!.IsAuthenticated) {
+                                        <a asp-action="Register" asp-area="" asp-controller="Account" class="btn head-btn1">Register</a>
+                                        <a asp-action="Login" asp-area="" asp-controller="Account" class="btn head-btn2">Login</a>
                                     }
-                                    else
-                                    {
-                                        <a href="/Account/LogOut"  class="btn head-btn1">Logout</a>
+                                    else {
+                                        <a asp-controller="Account" asp-area="" asp-action="LogOut" class="btn head-btn1">Logout</a>
                                     }
                                 </div>
                             </div>

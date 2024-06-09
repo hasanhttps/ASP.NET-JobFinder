@@ -36,9 +36,8 @@ app.UseEndpoints(endpoints => {
 
     endpoints.MapDefaultControllerRoute();
 });
+app.Services.AddRoleServices();
 
 #pragma warning restore ASP0014
 
 app.Run();
-
-app.Services.AddRoleServices();

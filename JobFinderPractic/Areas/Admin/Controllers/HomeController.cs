@@ -1,14 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using JobFinder.DataAccess.Reposiotries.Abstracts;
 
 namespace JobFinderPractic.Areas.Admin.Controllers;
 
-[Area("Admin")]
-public class HomeController : Controller
-{
+[Area( "Admin")]
+[Authorize(Roles = "Admin")]
+public class HomeController : Controller {
+
+    // Fields
+
+    private readonly IJobRepository _jobReository;
+
+    // Constructor
+
+    public HomeController(IJobRepository jobReository) {
+        _jobReository = jobReository;
+    }
+
     // Admin Girish Sehifesi => Home
     [HttpGet]
-    public IActionResult Index()
-    {
+    public IActionResult Index() {
         return View();
     }
 

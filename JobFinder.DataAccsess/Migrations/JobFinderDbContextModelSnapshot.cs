@@ -104,6 +104,29 @@ namespace JobFinder.DataAccsess.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("JobFinder.Domain.Entities.Concretes.Categories", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("JobFinder.Domain.Entities.Concretes.Jobs", b =>
                 {
                     b.Property<int>("Id")
@@ -112,60 +135,88 @@ namespace JobFinder.DataAccsess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AppUserId")
+                    b.Property<bool>("AcceptAppealFromRetired")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("AcceptNotCompleteCv")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
-
-                    b.Property<string>("AppUserId1")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Desc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Education")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EntryProcess")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Experience")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ExpireDateTime")
+                    b.Property<DateTime?>("ExpireDateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ProfileRequierments")
+                    b.Property<string>("Gender")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MaxAge")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaxSalary")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MinAge")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MinSalary")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("StandartEntranceProccess")
+                    b.Property<string>("ProfileDemand")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Region")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Schedule")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StateType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("VacancyCode")
+                    b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("VacancyUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("VacantionCode")
+                        .HasColumnType("int");
 
-                    b.Property<string>("WorkingSchedule")
+                    b.Property<string>("VacantionUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AppUserId1");
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Jobs");
                 });
@@ -305,9 +356,21 @@ namespace JobFinder.DataAccsess.Migrations
 
             modelBuilder.Entity("JobFinder.Domain.Entities.Concretes.Jobs", b =>
                 {
-                    b.HasOne("JobFinder.Domain.Entities.Concretes.AppUser", null)
+                    b.HasOne("JobFinder.Domain.Entities.Concretes.Categories", "Category")
                         .WithMany("Jobs")
-                        .HasForeignKey("AppUserId1");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JobFinder.Domain.Entities.Concretes.AppUser", "User")
+                        .WithMany("Jobs")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -362,6 +425,11 @@ namespace JobFinder.DataAccsess.Migrations
                 });
 
             modelBuilder.Entity("JobFinder.Domain.Entities.Concretes.AppUser", b =>
+                {
+                    b.Navigation("Jobs");
+                });
+
+            modelBuilder.Entity("JobFinder.Domain.Entities.Concretes.Categories", b =>
                 {
                     b.Navigation("Jobs");
                 });

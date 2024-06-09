@@ -12,11 +12,13 @@ public class AccountController : Controller {
 
     private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
+    private readonly RoleManager<IdentityRole> _roleManager;
 
     // Constructor
 
-    public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager) { 
+    public AccountController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager) { 
         _userManager = userManager;
+        _roleManager = roleManager;
         _signInManager = signInManager;
     }
 
@@ -48,7 +50,8 @@ public class AccountController : Controller {
         }
         else {
             await _signInManager.SignInAsync(user, true);
-            return RedirectToAction("Index", "Home");
+            if (user.Role == "Admin") return RedirectToAction("Index", "Home", new { Area = "Admin" });
+            else return RedirectToAction("Index", "Home");
         }
     }
 
@@ -63,9 +66,20 @@ public class AccountController : Controller {
 
         var user = new AppUser() { UserName = viewModel.Email, Email = viewModel.Email, FullName = viewModel.FullName, Role = viewModel.Role };
         var result = await _userManager.CreateAsync(user, viewModel.Password);
+
         if(result.Succeeded) {
+
+            var role = await _roleManager.RoleExistsAsync(viewModel.Role);
+
+            if (!role)
+                await _roleManager.CreateAsync(new IdentityRole { Name = viewModel.Role });
+
+            await _userManager.AddToRoleAsync(await _userManager.FindByNameAsync(user.UserName), viewModel.Role);
+
             return RedirectToAction("Login", "Account");
-        }
+        } 
+
+
         return View();
     }
 
